@@ -5,7 +5,7 @@ from imblearn.over_sampling import SMOTE
 import joblib
 import os
 
-CLEANED_PATH = "911_cleaned.parquet"
+CLEANED_PATH = "911_cleaned_all.parquet"
 df = pl.read_parquet(CLEANED_PATH)
 print(f"Строк: {df.shape[0]}")
 print(f"Колонки: {df.columns}")
